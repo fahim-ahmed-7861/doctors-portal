@@ -7,20 +7,29 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Appointment from './Components/Appointment/Appointment/Appointment';
+
 function App() {
   return (
     <Router>
-  <Home></Home>
-          <Switch>
+      =
+      <Switch>
 
-              <Route exact path="/">
-              
-              </Route>
+        <Route exact path="/">
+
+          <Home></Home>
+
+        </Route>
+        <Route path="/appointment">
+
+       <Appointment></Appointment>
+
+        </Route>
 
 
-          </Switch>
+      </Switch>
 
-       </Router>
+    </Router>
   );
 }
 
