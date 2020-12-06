@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Appointment from './Components/Appointment/Appointment/Appointment';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import AllPatients from './Components/AllPatients/AllPatients';
+import AddDoctor from './Components/AddDoctor/AddDoctor';
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
         <Dashboard></Dashboard>
 
         </Route>
+
+        <Route path="/dashboard/allPatients">
+            <AllPatients></AllPatients>
+          </Route>
+
+          <Route path="/Add a Doctor">
+           <AddDoctor></AddDoctor>
+          </Route>
 
 
       </Switch>
