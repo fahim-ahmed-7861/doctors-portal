@@ -2,7 +2,7 @@
 import React from 'react';
 import AppointmentFrom from '../AppointmentFrom/AppointmentFrom';
 
-const BookingCard = ({ booking, date }) => {
+const BookingCard = ({ booking, date}) => {
 
   
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -26,7 +26,7 @@ const BookingCard = ({ booking, date }) => {
                     <h6>{booking.visitingHour}</h6>
                     <p>{booking.totalSpace} SPACES AVAILABLE</p>
                     <button onClick={openModal} className="btn btn-brand text-uppercase">Book Appointment</button>
-                    <AppointmentFrom modalIsOpen={modalIsOpen} closeModal={closeModal}></AppointmentFrom>
+                    <AppointmentFrom date={date} modalIsOpen={modalIsOpen} appointmentOn={booking.subject} closeModal={closeModal}></AppointmentFrom>
                 </div>
             </div>
         </div>
